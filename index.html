@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17130f">
+  <title>Cyber Rose · Gesture Bloom</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <script>
+    if (location.protocol === "file:") {
+      document.addEventListener("DOMContentLoaded", () => {
+        const warning = document.createElement("div");
+        warning.style.cssText = "position:fixed;inset:0;z-index:9999;display:grid;place-content:center;text-align:center;padding:28px;background:#020817;color:#eafcff;font:18px/1.8 'Microsoft YaHei',sans-serif";
+        warning.innerHTML = "<strong style='font-size:26px;color:#59e6ff'>Incorrect Launch Method</strong><span>Close this page and double-click start in the project folder.<br>Do not open index directly; the camera requires localhost.</span>";
+        document.body.append(warning);
+      });
+    }
+  </script>
+  <main class="stage" id="stage" aria-label="Interactive cyber rose stage">
+    <section class="flower-panel">
+      <header class="topbar controls">
+        <div class="brand"><span class="brand-dot"></span>CYBER BLOOM</div>
+        <div class="system-label">BIO-MECHANICAL // 01</div>
+      </header>
+      <canvas id="flowerCanvas" aria-label="Flower animation"></canvas>
+      <div class="rose-visual" id="roseVisual" aria-label="Blue-gold rose bloom animation">
+        <div class="rose-stage stage-1"></div>
+        <div class="rose-stage stage-2"></div>
+        <div class="rose-stage stage-3"></div>
+        <div class="rose-stage stage-4"></div>
+        <div class="rose-stage stage-5"></div>
+        <div class="rose-stage stage-6"></div>
+      </div>
+      <div class="botanical-copy">
+        <span class="chapter" id="chapter">ROSE // 01</span>
+        <h1 id="flowerName">MECHANICAL ROSE</h1>
+        <em id="latinName">ROSA // CYBERNETICA</em>
+        <p id="flowerNote">Open your palm. Awaken the blue-gold core.</p>
+        <div class="progress-track"><span id="bloomProgress"></span></div>
+      </div>
+      <div class="phase-badge" id="phaseBadge">DORMANT</div>
+    </section>
+
+    <section class="camera-panel">
+      <video id="cameraVideo" playsinline muted></video>
+      <div class="camera-placeholder" id="cameraPlaceholder">
+        <div class="hand-glyph">◇</div>
+        <p>Start the camera · Enter with a fist, then open slowly</p>
+      </div>
+      <canvas id="handCanvas" aria-label="Hand tracking overlay"></canvas>
+      <aside class="gesture-card">
+        <small>GESTURE</small>
+        <strong id="gestureName">AWAITING GESTURE</strong>
+        <span id="statusText">Auto-calibrates on entry · Open to bloom · Close to fold</span>
+      </aside>
+    </section>
+
+    <div class="toolbar controls" id="toolbar">
+      <button id="startCamera" type="button">START CAMERA</button>
+      <button id="resetBloom" type="button">RESET</button>
+      <button id="fullscreen" type="button">FULLSCREEN</button>
+    </div>
+  </main>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>

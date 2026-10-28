@@ -1,0 +1,4 @@
+interface:
+  display_name: Cyber Rose Gesture Bloom
+  short_description: Webcam-controlled blue-gold mechanical rose
+  default_prompt: Build or improve a graceful six-stage cyber rose bloom controlled by one-hand webcam gestures.
