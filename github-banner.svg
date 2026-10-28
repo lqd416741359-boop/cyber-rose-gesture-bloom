@@ -1,0 +1,48 @@
+<svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06152A"/>
+      <stop offset="0.52" stop-color="#0A2841"/>
+      <stop offset="1" stop-color="#07111F"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(922 206) rotate(90) scale(192)">
+      <stop stop-color="#2FC8FF" stop-opacity="0.36"/>
+      <stop offset="1" stop-color="#2FC8FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="762" y1="94" x2="1030" y2="329" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF0A6"/>
+      <stop offset="0.45" stop-color="#EAB85B"/>
+      <stop offset="1" stop-color="#66D8FF"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#75CFFF" stroke-opacity="0.08"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="420" rx="18" fill="url(#bg)"/>
+  <rect width="1280" height="420" rx="18" fill="url(#grid)"/>
+  <ellipse cx="922" cy="206" rx="212" ry="212" fill="url(#halo)"/>
+  <path d="M0 350C240 300 372 392 610 345C788 310 960 336 1280 266" stroke="#53D9FF" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M0 366C240 316 372 408 610 361C788 326 960 352 1280 282" stroke="#EFC96B" stroke-opacity="0.17" stroke-width="1"/>
+  <g transform="translate(916 208)" stroke="url(#gold)" stroke-width="4" fill="#0B2B47" fill-opacity="0.72" filter="url(#glow)">
+    <path d="M0 -132C-52 -118 -91 -73 -86 -20C-82 26 -41 60 0 77C41 60 82 26 86 -20C91 -73 52 -118 0 -132Z"/>
+    <path d="M0 -98C-34 -80 -58 -47 -53 -11C-49 16 -23 38 0 50C23 38 49 16 53 -11C58 -47 34 -80 0 -98Z"/>
+    <path d="M0 -62C-20 -44 -29 -25 -24 -8C-20 5 -9 16 0 22C9 16 20 5 24 -8C29 -25 20 -44 0 -62Z"/>
+    <path d="M0 77V174" fill="none"/>
+    <path d="M0 117L54 92M0 145L-52 121" fill="none"/>
+  </g>
+  <g fill="#FFE38A">
+    <circle cx="971" cy="300" r="5"/><circle cx="864" cy="329" r="4"/><circle cx="1045" cy="245" r="4"/>
+  </g>
+  <g fill="#8EE8FF" opacity="0.9"><circle cx="1028" cy="120" r="3"/><circle cx="790" cy="206" r="3"/><circle cx="1101" cy="176" r="2"/></g>
+  <text x="74" y="94" fill="#FFE18A" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="5">CYBER BLOOM / 01</text>
+  <text x="72" y="176" fill="#F3FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="800" letter-spacing="1">CYBER ROSE</text>
+  <text x="76" y="220" fill="#7EE7FF" font-family="Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="3">GESTURE BLOOM</text>
+  <text x="76" y="276" fill="#D7E9F2" font-family="Segoe UI, Arial, sans-serif" font-size="20">A webcam-controlled mechanical rose</text>
+  <text x="76" y="307" fill="#D7E9F2" font-family="Segoe UI, Arial, sans-serif" font-size="20">from closed bud to full bloom.</text>
+  <rect x="76" y="342" width="198" height="4" rx="2" fill="#52D9FF"/>
+  <rect x="274" y="342" width="74" height="4" rx="2" fill="#F4D374"/>
+</svg>
